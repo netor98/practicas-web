@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dark-theme>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Néstor Padilla :p</title>
+        <link rel="stylesheet" href="styles/hamburger.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/responsive.css" />
+    </head>
+    <body>
+        <header class="title" dark-theme>
+            <h1>Contenedor de tareas</h1>
+            <img src="info_FILL0_wght400_GRAD0_opsz24.svg" />
+        </header>
+        <main>
+            <div class="section" id="seccion1" data-scroll-spy>
+                <h2>Tarea 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit a, illum
+                    fugiat doloribus iure ullam pariatur quibusdam necessitatibus, nobis possimus
+                    repudiandae! Nesciunt natus aspernatur atque ipsa assumenda pariatur illum.
+                </p>
+            </div>
+
+            <div class="section" id="seccion2" data-scroll-spy>
+                <h2>Tarea 2</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit, cum ab
+                    accusantium labore et, laborum voluptatibus provident saepe officia dolor
+                    aspernatur quisquam laboriosam, impedit minima magnam blanditiis! Corrupti,
+                    exercitationem?
+                </p>
+            </div>
+
+            <button class="panel-btn hamburger">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <button class="theme-btn light-theme">🌙</button>
+        </main>
+
+        <aside class="panel">
+            <nav class="menu">
+                <a href="#seccion1" data-scroll-spy>Tarea 1</a>
+                <a href="#seccion2" data-scroll-spy>Tarea 2</a>
+            </nav>
+        </aside>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

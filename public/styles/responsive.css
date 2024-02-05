@@ -1,0 +1,63 @@
+@media screen and (min-width: 1024px) {
+    :root {
+        --font-size: 16px;
+        --main-color: rgb(190, 215, 84);
+        --main-modal-color: rgba(190, 215, 84);
+        --container-width: 1200px;
+        --panel-color: #191919;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 4rem auto;
+        grid-template-areas:
+            'header header'
+            'panel main';
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    .title {
+        grid-area: header;
+    }
+
+    .panel {
+        grid-area: panel;
+        position: sticky;
+        top: 4rem;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+        background-color: var(--panel-color);
+    }
+
+    .panel-btn {
+        display: none;
+    }
+
+    .menu {
+        position: sticky;
+        justify-content: start;
+        text-align: left;
+    }
+
+    .menu a:hover,
+    a.active {
+        color: var(--panel-color);
+        background-color: var(--main-color);
+        font-weight: bold;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        margin: 15px auto;
+        padding: 2rem;
+    }
+
+    .theme-btn {
+        left: initial;
+        right: 1vh;
+    }
+}

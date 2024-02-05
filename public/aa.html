@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* Styling for modal */
+            #myModal {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .modal-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            .modal-columns {
+                display: flex;
+                width: 80%;
+                max-width: 600px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .modal-column {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .modal-column img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Trigger button to open the modal -->
+        <button onclick="openModal()">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal">
+            <div class="modal-content">
+                <div class="modal-columns">
+                    <div class="modal-column">
+                        <img src="your_image_url.jpg" alt="Your Image" />
+                    </div>
+                    <div class="modal-column">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Your Name</h2>
+                        <p>Additional information about you...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript functions to open and close the modal
+            function openModal() {
+                document.getElementById('myModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+
+            // Close the modal if the user clicks outside of it
+            window.onclick = function (event) {
+                var modal = document.getElementById('myModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        </script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .tooltip-text {
+                visibility: hidden;
+                width: 120px;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: -150%;
+                left: 50%;
+                margin-left: -60px;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .tooltip:hover .tooltip-text {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip">
+            Hover over me
+            <span class="tooltip-text">This is a tooltip</span>
+        </div>
+    </body>
+</html>

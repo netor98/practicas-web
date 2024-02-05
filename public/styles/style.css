@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'sans-serif';
+}
+/* VARIABLES CSS*/
+:root {
+    --font-size: 16px;
+    --main-color: rgb(190, 215, 84);
+    --secondary-color: #191919;
+    --main-modal-color: rgba(190, 215, 84, 0.85);
+    --secondary-modal-color: rgba(227, 101, 28, 0.85);
+    --container-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--main-modal-color);
+}
+
+img {
+    margin: auto 15px;
+    width: 35px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#sections {
+    position: absolute;
+    z-index: 0;
+    top: 2rem;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#sections h2 {
+    padding-top: 5rem;
+    margin-bottom: 30rem;
+}
+
+#sections h2 h3 {
+    margin-bottom: 0;
+}
+
+.button-style {
+    position: fixed;
+    z-index: 3;
+    top: 90vh;
+    left: 93vw;
+    border-radius: 75%;
+    display: inline-block;
+    background-color: var(--main-modal-color);
+}
+
+#menu-sections {
+    margin-top: 50px;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh; /* Altura completa de la pantalla */
+    width: 200px;
+    background-color: inherit; /* Color de fondo del menú */
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Sombra para un aspecto elevado */
+    transition: width 0.3s; /* Agrega una transición para cambiar el ancho */
+}
+
+.open-menu {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.85;
+    transition: width 0.45s;
+    text-align: center;
+    background-color: #222;
+}
+
+.open-menu a {
+    margin-bottom: 3rem;
+    padding: 1.2rem;
+    display: block;
+    color: #f7df1e;
+    text-decoration: none;
+}
+
+.open-menu a:hover {
+    background-color: #f7df1e;
+    color: #222;
+}
+
+.invisible-sections {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*RULES HAMBURGER MENU*/
+.header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.section {
+    padding: 2rem;
+    padding-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: 100vh;
+    width: 100%;
+    max-width: var(--container-width);
+    text-align: center;
+}
+
+.panel-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.theme-btn {
+    position: fixed;
+    bottom: 1vh;
+    left: 1vh;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--main-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.45s ease;
+    z-index: 999;
+    outline: 0;
+}
+
+.theme-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.dark-theme {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.hide-btn {
+    opacity: 0;
+    cursor: default;
+}
+
+.panel {
+    position: fixed;
+    z-index: 998;
+    background-color: var(--secondary-color);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*De arriba*/
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease;
+}
+
+.panel.is-active {
+    transform: translate(0, 0);
+}
+
+.menu {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.menu a {
+    padding: 1.2rem;
+    width: inherit;
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+
+#seccion1 h1 {
+    margin-bottom: 25 px;
+}
+
+#seccion1 button {
+    font-weight: bold;
+    background-color: #6addf7;
+    padding: 1rem;
+    margin: 15px 0;
+    transition: background-color 0.4s ease;
+    margin-bottom: 7rem;
+}
+
+#seccion1 button:hover {
+    background-color: #6addf771;
+}
+
+#title-section {
+    margin-bottom: 10px;
+}
