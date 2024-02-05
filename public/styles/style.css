@@ -9,8 +9,6 @@
     --font-size: 16px;
     --main-color: rgb(190, 215, 84);
     --secondary-color: #191919;
-    --main-modal-color: rgba(190, 215, 84, 0.85);
-    --secondary-modal-color: rgba(227, 101, 28, 0.85);
     --container-width: 1200px;
 }
 
@@ -41,7 +39,7 @@ body {
     width: 100vw;
     padding: 1rem;
     text-align: center;
-    background-color: var(--main-modal-color);
+    background-color: var(--main-color);
 }
 
 img {
