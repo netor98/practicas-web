@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
 }
+
 /* VARIABLES CSS*/
 :root {
     --font-size: 16px;
@@ -25,10 +26,16 @@ html {
     box-sizing: border-box;
     font-family: var(--main-font);
     font-size: var(--font-size);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body {
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
 }
 
 .title {
@@ -40,11 +47,6 @@ body {
     padding: 1rem;
     text-align: center;
     background-color: var(--main-color);
-}
-
-img {
-    margin: auto 15px;
-    width: 35px;
 }
 
 img:hover {
@@ -192,6 +194,14 @@ img {
     color: var(--main-color);
 }
 
+.dark-theme .link-container a {
+    color: #fff !important;
+}
+
+.dark-theme .link-container a:hover {
+    color: #afabab !important;
+}
+
 .hide-btn {
     opacity: 0;
     cursor: default;
@@ -261,4 +271,53 @@ img {
 
 #title-section {
     margin-bottom: 10px;
+}
+
+.modal-content {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-columns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-column {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-column:nth-child(2) {
+    flex-direction: column;
+    text-align: center;
+}
+
+#foto {
+    width: 60%;
+}
+
+.link-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.link-container p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.link-container a {
+    margin: auto 5px;
+    font-weight: 600;
+    transition: color 0.4s ease;
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.link-container a:hover {
+    color: #191919;
+    text-decoration: underline;
 }

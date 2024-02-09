@@ -5,6 +5,7 @@ export default function theme(themeBtn) {
 
     let counter = 1;
     if (localStorage.getItem('dark') == 'true') counter++;
+
     d.addEventListener('click', (e) => {
         if (e.target.matches(themeBtn)) {
             if (counter % 2 == 0) {
