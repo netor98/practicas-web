@@ -1,0 +1,39 @@
+@media screen and (min-width: 1024px) {
+    :root {
+        --main-color: #fff6e9;
+        --secondary-color: #191919;
+        --container-width: 1200px;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .menu a {
+        font-size: 2.5rem;
+    }
+
+    .slider {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 2rem 5rem;
+        height: 32rem;
+        max-width: 100%;
+    }
+
+    .title-main {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .container-links a {
+        text-align: left;
+        margin: 5px auto;
+    }
+}
