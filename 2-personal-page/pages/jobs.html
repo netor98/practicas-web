@@ -6,6 +6,19 @@
         <title>Situación laborar</title>
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="/styles/hamburger.css" />
+        <link rel="stylesheet" href="../styles/responsive.css" />
+        <link rel="stylesheet" href="../styles/carousel.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="header">
@@ -29,6 +42,55 @@
             </nav>
         </aside>
         <h2>Situacion laboral</h2>
+        <div class="slider">
+            <div class="slider-slides">
+                <div class="slider-slide active">
+                    <h3>
+                        Mi primer y único empleo fue en una taquería familiar donde me desenvolvía
+                        como mesero, trabajé durante 4 meses
+                    </h3>
+                    <img src="/2-personal-page/imgs/tacos.jpeg" alt="Estado civil" />
+                </div>
+
+                <div class="slider-slide">
+                    <h3>
+                        Si alguien requiere de un programador y que se le quiera pagar menos del
+                        salario mínimo y sin prestaciones, yo podría ser un buen candidato. Me pongo
+                        la playera por la empresa y recibo pizzas del little cesaer a cambio de
+                        horas extras
+                    </h3>
+                    <img src="/2-personal-page/imgs/chamba.jpeg" alt="Estado civil" />
+                </div>
+            </div>
+            <div class="slider-btns">
+                <a class="prev" href="#">&#8656;</a>
+                <a class="next" href="#">&#8658;</a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-footer">
+                <h3>Elaborado por Néstor Padilla © 2024</h3>
+
+                <div class="container-links">
+                    <a href="https://github.com/netor98">
+                        Github
+                        <i class="fi fi-brands-github"></i>
+                    </a>
+
+                    <a href="">
+                        Twitter
+                        <i class="fi fi-brands-twitter"></i>
+                    </a>
+                    <a href="/index.html">
+                        Tareas
+                        <i class="fi fi-brands-html5"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/carousel.js"></script>
+
         <script type="module" src="../js/index.js"></script>
     </body>
 </html>

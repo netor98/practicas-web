@@ -1,6 +1,7 @@
 const images = [];
-images[0] = 'imgs/prueba.jpg';
-images[1] = 'imgs/new.png';
+images[0] = 'imgs/mochis.jpeg';
+images[1] = 'imgs/primaria.jpg';
+images[2] = 'imgs/mex.jpeg';
 const d = document;
 const sliderImg = d.getElementById('img-slide');
 
