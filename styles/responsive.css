@@ -87,4 +87,10 @@
         margin: 15px auto;
         width: 100%;
     }
+
+    .frames {
+        border: 1px solid black;
+        width: 350px;
+        height: 400px;
+    }
 }
