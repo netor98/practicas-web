@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formación acaemica</title>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/responsive.css" />
+        <link rel="stylesheet" href="../styles/carousel.css" />
+
+        <link rel="stylesheet" href="/styles/hamburger.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="buttons">
+                    <i class="fi fi-br-settings-sliders settings"></i>
+
+                    <button class="panel-btn hamburger">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+                <a href="/4-personal-page-cookies/index.html">
+                    <h2 class="title">Página personal</h2>
+                </a>
+            </div>
+        </header>
+        <aside class="panel">
+            <nav class="menu">
+                <a href="/4-personal-page-cookies/index.html">incio</a>
+                <a href="/4-personal-page-cookies/pages/info.html">información personal</a>
+                <a href="#">formación académica</a>
+                <a href="/4-personal-page-cookies/pages/jobs.html">situación laboral</a>
+                <a href="/4-personal-page-cookies/pages/activities.html">
+                    actividades extraescolares
+                </a>
+            </nav>
+        </aside>
+
+        <aside class="settings-panel">
+            <div class="container-inputs">
+                <div class="header-conf">
+                    <h2 class="text-center">Configuracion página</h2>
+                </div>
+
+                <div class="form">
+                    <h3>Fondo</h3>
+                    <div class="inputs">
+                        <label for="background">Color de fondo:</label>
+                        <input type="color" id="background" />
+                    </div>
+
+                    <hr />
+                    <h3>Enlaces</h3>
+                    <div class="inputs">
+                        <label for="background">Redondeado (enlaces):</label>
+                        <div class="buttons-selection redondeado-enlances">
+                            <button id="btn-redondeo">Sí</button>
+                            <button id="btn-noRed">No</button>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Color de fondo (enlaces):</label>
+                        <input type="color" id="background-enlaces" />
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Color de letra (enlaces):</label>
+                        <input type="color" id="color-enlaces" />
+                    </div>
+
+                    <hr />
+                    <h3>Imagenes</h3>
+
+                    <div class="inputs">
+                        <label for="background">Color del contorno:</label>
+                        <input type="color" id="color-border" />
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Grosor del contorno:</label>
+                        <div class="buttons-selection border-size">
+                            <button id="btn-small-bord">Chico</button>
+                            <button id="btn-med-bord">Mediano</button>
+                            <button id="btn-high-bord">Alto</button>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Tamaño:</label>
+                        <div class="buttons-selection size-img">
+                            <button id="btn-small-size">Chico</button>
+                            <button id="btn-med-size">Mediano</button>
+                            <button id="btn-high-size">Alto</button>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Redondeado</label>
+                        <div class="buttons-selection redondeado">
+                            <button id="btn-rad-small">Chico</button>
+                            <button id="btn-rad-med">Mediano</button>
+                            <button id="btn-rad-high">Alto</button>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Sombra:</label>
+                        <div class="buttons-selection shadow">
+                            <button id="btn-shadow">Sí</button>
+                            <button id="btn-no-shadow">No</button>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <h3>Parráfos</h3>
+                    <div class="inputs">
+                        <label for="background">Color:</label>
+                        <input type="color" id="color-text" />
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Color de fondo:</label>
+                        <input type="color" id="background-text" />
+                    </div>
+
+                    <div class="inputs">
+                        <label for="background">Tamaño:</label>
+                        <div class="buttons-selection font-size">
+                            <button id="btn-small-font">Chico</button>
+                            <button id="btn-med-font">Mediano</button>
+                            <button id="btn-high-font">Alto</button>
+                        </div>
+                    </div>
+
+                    <div class="buttons-conf">
+                        <button class="btn-rees" id="btn-res">Reestablecer</button>
+                        <button class="btn-save" id="btn-save">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <h2>info</h2>
+
+        <div class="slider">
+            <div class="slider-slides">
+                <div class="slider-slide active">
+                    <h3>Kinder: Eva Sámano de Lopez Mateos</h3>
+                    <img src="/2-personal-page/imgs/kinder.jpg" alt="Estado civil" />
+                </div>
+                <div class="slider-slide">
+                    <h3>Primaria: Antonio Rosales (Primer año hasta cuarto año)</h3>
+                    <img src="/2-personal-page/imgs/primaria.png" alt="Estado civil" />
+                </div>
+                <div class="slider-slide">
+                    <h3>Primaria: Marcial Ordoñez</h3>
+                    <img src="/2-personal-page/imgs/primaria.jpg" alt="Estado civil" />
+                </div>
+                <div class="slider-slide">
+                    <h3>Secundaria: E.T.I NUM.2</h3>
+                    <img src="/2-personal-page/imgs/secu.jpg" alt="Estado civil" />
+                </div>
+
+                <div class="slider-slide">
+                    <h3>Preparatoria: Preparatoria CU Mochis</h3>
+                    <img src="/2-personal-page/imgs/prepa.png" alt="Estado civil" />
+                </div>
+
+                <div class="slider-slide">
+                    <h3>Universidad: Facultad de ingeniería mochis (Actualmente)</h3>
+                    <img src="/2-personal-page/imgs/LOGO_FIM.png" alt="Estado civil" />
+                </div>
+            </div>
+            <div class="slider-btns">
+                <a class="prev" href="#">&#8656;</a>
+                <a class="next" href="#">&#8658;</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-footer">
+                <h3>Elaborado por Néstor Padilla © 2024</h3>
+
+                <div class="container-links">
+                    <a href="https://github.com/netor98">
+                        Github
+                        <i class="fi fi-brands-github"></i>
+                    </a>
+
+                    <a href="">
+                        Twitter
+                        <i class="fi fi-brands-twitter"></i>
+                    </a>
+                    <a href="/index.html">
+                        Tareas
+                        <i class="fi fi-brands-html5"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/carousel.js"></script>
+
+        <script type="module" src="../js/index.js"></script>
+    </body>
+</html>
