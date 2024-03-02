@@ -24,6 +24,7 @@ d.addEventListener('DOMContentLoaded', (e) => {
         }
         if (e.target == $btnSend) {
             checkInputs();
+            error = false;
         }
 
         if (e.target == $btnClear) {
@@ -51,7 +52,6 @@ const checkInputs = () => {
             error = true;
         } else {
             ele.parentNode.lastElementChild.style.display = 'none';
-            error = false;
         }
     });
     const $confirmPass = d.getElementById('confirmPass');
@@ -60,7 +60,6 @@ const checkInputs = () => {
         error = true;
     } else {
         $confirmPass.parentNode.lastElementChild.style.display = 'none';
-        error = false;
     }
 
     if (!error) showInputs();
