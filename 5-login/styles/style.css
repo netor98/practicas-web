@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: 10rem;
+}
+
+.header {
+    font-size: 1.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    text-align: center;
+}
+
+.header h2 {
+    font-weight: 900;
+    margin: 2.5rem auto;
+}
+
+.header span {
+    font-weight: 200;
+}
+
+.container-form {
+    max-width: 55rem;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    background-color: #fff;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+}
+
+.container-input label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(68, 68, 68);
+    display: block;
+    margin-bottom: 0.4rem;
+    margin-top: 1.8rem;
+}
+
+.container-input input {
+    padding: 1.4rem 0.5rem;
+    border: 1px solid rgb(209 213 219);
+    border-radius: 0.375rem;
+    width: 98%;
+    line-height: 0;
+    font-size: 1.5rem;
+}
+
+.container-input input::placeholder {
+    color: rgb(100, 100, 100);
+    font-size: 1.7rem;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+.container-buttons button {
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+#send {
+    background: #6366f1;
+    color: #fff;
+}
+
+#send:hover {
+    cursor: pointer;
+    background-color: #272bf5;
+}
+
+#clear:hover {
+    cursor: pointer;
+    background-color: #adadad;
+}
+
+.toggle-password {
+    position: absolute;
+    left: 65%;
+    transform: translateY(-155%);
+    cursor: pointer;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: rgb(105, 105, 105);
+}
+
+.error-div {
+    margin: 0 auto;
+    background-color: red;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    display: none;
+}
