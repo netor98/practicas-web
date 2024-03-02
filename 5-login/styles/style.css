@@ -29,6 +29,10 @@ h1 {
     margin-bottom: 10rem;
 }
 
+.toggle-password {
+    color: black;
+}
+
 .header {
     font-size: 1.5rem;
     padding-top: 1.75rem;
