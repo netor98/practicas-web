@@ -16,11 +16,11 @@ const menu = () => {
 	});
 
 	$contacto.addEventListener('click', (e) => {
-		window.location = '/Contacto/index.html';
+		window.location = '/6-carrito-01/Contacto/index.html';
 	});
 
 	$settings.addEventListener('click', (e) => {
-		window.location = '/configuracion/index.html';
+		window.location = '/6-carrito-01/configuracion/index.html';
 	});
 };
 

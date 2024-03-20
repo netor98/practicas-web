@@ -11,7 +11,7 @@ const login = () => {
 		let pass = $inputPass.value;
 		let user = $inputUser.value;
 		if (validateUser({ user, pass })) {
-			window.location.href = '/menu_inicial/index.html';
+			window.location.href = '/6-carrito-01/menu_inicial/index.html';
 			saveCookie(user, 365);
 		} else {
 			let popUp = showPopLogin();
