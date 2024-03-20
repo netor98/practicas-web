@@ -1,0 +1,316 @@
+/* Establece un tamaño máximo para el contenedor principal */
+.INICIO .div {
+	background-color: #ffffff;
+	max-width: 100%; /* Cambiado a porcentaje */
+	width: 95%; /* Porcentaje del ancho del viewport */
+	max-height: 100vh; /* Altura máxima igual al alto del viewport */
+	position: relative;
+	margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Utiliza unidades relativas y consulta de medios para el texto */
+.INICIO .text-wrapper {
+	position: absolute;
+	width: 300%; /* Porcentaje del ancho del contenedor principal */
+	top: 50%; /* Centrado vertical */
+	left: 5%; /* Ajuste horizontal */
+	font-size: 2.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+	line-height: 1.5; /* Espaciado de línea relativo al tamaño de la fuente */
+	transform: translate(-50%, -50%); /* Centrado vertical y horizontal */
+}
+
+/* Agrega más reglas para otros elementos de la misma manera */
+/* ... */
+
+/* Consulta de medios para estilos específicos en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+	/* Ajustes para pantallas pequeñas */
+	.INICIO .text-wrapper {
+		width: 80%; /* Reducción del ancho para pantallas pequeñas */
+		font-size: 18px; /* Tamaño de fuente fijo para pantallas pequeñas */
+		line-height: 1.3; /* Espaciado de línea ajustado */
+	}
+}
+
+/* Resto de tus estilos */
+/* ... */
+.INICIO {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1%;
+}
+
+.INICIO .div {
+	background-color: #ffffff;
+	width: 1510px;
+	height: 1787px;
+	position: relative;
+}
+
+.INICIO .text-wrapper {
+	position: absolute;
+	width: 477px;
+	top: 892px;
+	left: 251px;
+	font-family: 'Montserrat', Helvetica;
+	font-weight: 700;
+	color: #000000;
+	font-size: 48px;
+	letter-spacing: 0.1px;
+	line-height: 36px;
+	white-space: nowrap;
+}
+
+.INICIO .overlap {
+	position: absolute;
+	width: 964px;
+	height: 615px;
+	top: 996px;
+	left: 238px;
+	background-image: url(./img/image-14.png);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.INICIO .location {
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	top: 120px;
+	left: 496px;
+}
+
+.INICIO .overlap-group {
+	position: absolute;
+	width: 1510px;
+	height: 84px;
+	top: 1903px;
+	left: 0;
+}
+
+.INICIO .group {
+	position: absolute;
+	width: 1510px;
+	height: 84px;
+	top: 0;
+	left: 0;
+}
+
+.INICIO .group-2 {
+	position: relative;
+	width: 1519px;
+	height: 48px;
+}
+
+.INICIO .HR {
+	position: h;
+	width: 150px;
+	height: 2px;
+	top: -2px;
+	left: 0;
+}
+/*la barra de abajo de todo*/
+.INICIO .overlap-group-2 {
+	position: absolute;
+	width: 1530px;
+	height: 100px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(
+		to bottom,
+		transparent 50px,
+		#fa4a0c 50px
+	); /* Desplazado hacia abajo */
+}
+
+.INICIO .instagram {
+	position: absolute;
+	width: 38px;
+	height: 39px;
+	top: 52px;
+	left: 1414px;
+}
+
+.INICIO .facebook {
+	position: absolute;
+	width: 38px;
+	height: 39px;
+	top: 52px;
+	left: 1449px;
+}
+
+.INICIO .twitter {
+	position: absolute;
+	width: 39px;
+	height: 39px;
+	top: 52px;
+	left: 1375px;
+}
+
+.INICIO .pol-tica-de {
+	position: absolute;
+	width: 1103px;
+
+	top: 52px;
+	left: 20px;
+	font-family: 'Montserrat', Helvetica;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 16px;
+	letter-spacing: 0.1px;
+	line-height: 36px;
+	white-space: nowrap;
+}
+
+.INICIO .span {
+	letter-spacing: 0.02px;
+}
+
+.INICIO .text-wrapper-2 {
+	position: absolute;
+	width: 269px;
+	top: 1653px;
+	left: 178px;
+	font-family: 'Montserrat', Helvetica;
+	font-weight: 700;
+	color: #000000;
+	font-size: 24px;
+	letter-spacing: 0.1px;
+	line-height: 36px;
+	white-space: nowrap;
+}
+/*foto de comida de abajo*/
+.INICIO .overlap-2 {
+	position: absolute;
+	width: 1530px;
+	height: 837px;
+	top: 0;
+	left: 0;
+	background-image: url(./img/rectangle-48.png);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.INICIO .h {
+	position: absolute;
+	width: 1054px;
+	height: 182px;
+	top: 313px;
+	left: 229px;
+}
+
+.INICIO .tu-comida-favorita-a {
+	position: absolute;
+	width: 911px;
+	top: 9px;
+	left: 71px;
+	font-family: 'Poppins', Helvetica;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 58px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	line-height: 80px;
+}
+
+.INICIO .text-wrapper-3 {
+	position: absolute;
+	width: 140px;
+	top: 173px;
+	left: 639px;
+	font-family: 'Montserrat', Helvetica;
+	font-weight: 700;
+	color: #f6f6f6;
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 0.1px;
+	line-height: 36px;
+	white-space: nowrap;
+}
+.INICIO .master-button {
+	display: flex;
+	flex-direction: column;
+	width: 247px;
+	height: 69px;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 0px;
+	position: absolute;
+	top: 588px;
+	left: 631px;
+	background-color: #fa4a0c;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0px 10px 30px #b6322633;
+	text-decoration: none; /* Añadido para que se comporte como enlace */
+}
+
+.INICIO .master-button:hover {
+	background-color: #e03c00; /* Cambio de color al pasar el ratón */
+}
+
+.INICIO .text-wrapper-4 {
+	width: 100%;
+	text-align: center; /* Ajustado para centrar el texto horizontalmente */
+	color: #fff; /* Cambio de color del texto */
+	font-size: 18px; /* Tamaño de la fuente */
+	font-weight: bold; /* Negrita */
+	padding: 16px 0px; /* Espaciado interno */
+	top: -1px;
+	left: 21px; /* Ajuste de la posición hacia la derecha */
+	font-family: var(--h3-font-family);
+	font-weight: var(--h3-font-weight);
+	color: var(--light-text);
+	font-size: var(--h3-font-size);
+	letter-spacing: var(--h3-letter-spacing);
+	line-height: var(--h3-line-height);
+	font-style: var(--h3-font-style);
+}
+
+.INICIO .text-wrapper-5 {
+	position: absolute;
+	width: 221px;
+	top: 28px;
+	left: 1281px;
+	-webkit-text-stroke: 1px #00000080;
+	font-family: 'Poppins', Helvetica;
+	font-weight: 700;
+	color: #ffffff80;
+	font-size: 32px;
+	letter-spacing: 0.1px;
+	line-height: 36px;
+	white-space: nowrap;
+}
+
+.INICIO .image-removebg {
+	position: absolute;
+	width: 162px;
+	height: 163px;
+	top: 11px;
+	left: 26px;
+	object-fit: cover;
+}
+
+/* Ancho y color del scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #f1f1f1;
+}
+
+/* Estilo del track del scrollbar (fondo) */
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+/* Estilo del thumb del scrollbar (la parte deslizante) */
+::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 4px;
+}
+
+/* Estilo del thumb cuando se pasa el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}

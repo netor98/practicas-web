@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registrarse</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/Registrarse/popup.css" />
+
+		<link rel="icon" href="img/logo.png" />
+	</head>
+	<body>
+		<div class="login-container">
+			<h2>Iniciar Sesion</h2>
+			<form action="/iniciar_secion/index.html" method="post" id="formLogin">
+				<div>
+					<p class="nombreInput">Correo electronico</p>
+					<input
+						type="text"
+						name="usuario"
+						placeholder="Usuario"
+						required
+						id="user"
+					/>
+				</div>
+
+				<div>
+					<p class="nombreInput">Contraseña</p>
+					<input
+						type="password"
+						name="contraseña"
+						placeholder="********"
+						id="password"
+						required
+					/>
+				</div>
+
+				<button type="submit" class="btn" id="login-btn">
+					Iniciar Sesion
+				</button>
+				<a href="../index.html" class="letas">Atras</a>
+			</form>
+		</div>
+		<div class="popup" id="popup">
+			<div class="overlay"></div>
+			<div class="popup-content"></div>
+		</div>
+
+		<img src="img/logo.png" class="esquina-superior-izquierda" />
+		<script src="/static/js/login.js"></script>
+	</body>
+
+	<footer>
+		<div class="footer">
+			<p class="pol-tica-de">
+				<span class="span"
+					>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Política
+					de privacidad |
+					Términos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No
+					vender ni compartir mi información
+					personal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©
+					2024 Rebu Technologies Inc</span
+				>
+				<span class="social-icons">
+					<a href="https://instagram.com/">
+						<img class="instagram" src="img/ig.png" />
+					</a>
+					<a href="https://facebook.com/">
+						<img class="facebook" src="img/fb.png" />
+					</a>
+					<a href="https://twitter.com/">
+						<img class="twitter" src="img/tw.png" />
+					</a>
+				</span>
+			</p>
+		</div>
+	</footer>
+</html>

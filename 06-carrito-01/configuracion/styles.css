@@ -1,0 +1,492 @@
+/* Resetear box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+}
+
+body::after {
+  content: "";
+  background-size: cover;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5; /* Opacidad del 50% */
+  z-index: -1;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email,
+.password,
+.text{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black; /* Puedes ajustar el color y grosor del borde según tus preferencias */
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #FA4A0C;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px; /* Añade un margen inferior para separar los botones */
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: #e03c00;
+}
+
+.footer {
+  background-color: #FA4A0C;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1px 20px;
+  color: white;
+  font: bold;
+  font-size: 16px;
+}
+
+.pol-tica-de {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.span {
+  white-space: nowrap;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.esquina-superior-izquierda {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.nombreInput{
+  font: Arial;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+input:focus {
+  outline: none; /* Elimina el efecto de resaltado al enfocar el input */
+}
+
+.h1{
+  font: Arial;
+  color: #FA4A0C;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.esquina-inferior-derecha {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; /* Mantén la proporción de la imagen */
+  z-index: -1; /* Coloca la imagen detrás de otros elementos */
+  bottom: 68px;
+}
+
+.pTitulo{
+  font: Arial;
+  font-size: 32px;
+  margin-left: 200px;
+}
+
+.pTextoM{
+  font: Arial;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+
+
+.izquierda3{
+  flex: 3;
+  margin-left: 200px;
+}
+
+.izquierda1{
+  flex: 1;
+  margin-right: 20px;
+}
+
+.derecha1{
+  flex: 1;
+  margin-right: 200px;
+}
+
+.inputPersonalizado{
+  background-color: #F2F4F7;
+  width: 650px;
+  height: 250px;
+}
+
+.titulo{
+  font: Arial;
+  font-size: 32px;
+  color: #FA4A0C;
+}
+
+.pTexto{
+  font: Arial;
+  font-size: 20px;
+  /*margin-left: 200px;
+  margin-right: 200px;*/
+  text-align: justify;
+  /*margin-bottom: 20px;*/
+}
+
+
+
+  .button-container {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-left {
+  border-radius: 20px 0 0 20px;
+}
+
+.button-right {
+  border-radius: 0 20px 20px 0;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+}
+
+.active {
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .INICIO .overlap-group-2 {
+    position: absolute;
+    width: 1530px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 50px, #FA4A0C 50px); /* Desplazado hacia abajo */
+  }
+  
+  
+  
+  
+  
+  .INICIO .instagram {
+    position: absolute;
+    width: 38px;
+    height: 39px;
+    top: 52px;
+    left: 1414px;
+  }
+  
+  .INICIO .facebook {
+    position: absolute;
+    width: 38px;
+    height: 39px;
+    top: 52px;
+    left: 1449px;
+  }
+  
+  .INICIO .twitter {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 52px;
+    left: 1375px;
+  }
+  
+  .INICIO .pol-tica-de {
+    position: absolute;
+    width: 1103px;
+    
+    top: 52px;
+    left: 20px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 36px;
+    white-space: nowrap;
+  }
+  
+
+
+
+
+  .login-container {
+    width: 300px; 
+    margin: 5px auto;
+    background: rgba(255, 255, 255, 0.60); /* Fondo blanco con 99% de transparencia */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000; /* Añade un borde sólido de 2px de ancho y color gris claro */
+  }
+
+  .info-box {
+    background-color: #cfcfcf; /* Color de las tablas */
+    border: 1px solid #ccc; /* Marco de las tablas */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto; /* Centrar horizontalmente la caja de información */
+    width: 80%; /* Ajustar el ancho de la caja de información */
+    max-width: 600px; /* Establecer un ancho máximo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar transición */
+  }
+
+  input[type="email"],
+input[type="password"],
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black; /* Puedes ajustar el color y grosor del borde según tus preferencias */
+  margin-bottom: 10px;
+}
+
+a.letas {
+  display: inline; /* Hace que el enlace se comporte como un elemento en línea */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: rgba(0, 0, 0, 0.2); /* Texto negro semitransparente */
+}
+
+a.letas:hover {
+  color: rgba(0, 0, 0, 0.7); /* Texto negro semitransparente al pasar el mouse */
+}
+
+/* Ancho y color del scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f1f1f1;
+}
+
+/* Estilo del track del scrollbar (fondo) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Estilo del thumb del scrollbar (la parte deslizante) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+/* Estilo del thumb cuando se pasa el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+} 
+
+.contenedor {
+  margin: 100px; /* Establece un margen de 10px entre los elementos dentro del contenedor */
+}
+
+.btnTemImg {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FA4A0C; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.1s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btnTemImg:hover {
+  background-color: #e03c00; /* Color de fondo azul oscuro al pasar el ratón */
+}
+.btnTemDef {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FA4A0C; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+.btnTemDef:hover {
+  background-color: #e03c00; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+.btnTemDefO {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0C1317; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.1s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btnTemDefO:hover {
+  background-color: #585756; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+.btnTemDefV {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #006D46; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btnTemDefV:hover {
+  background-color: #40876e; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+
+.btnTemLetC {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FA4A0C; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 11px; /* Tamaño de fuente pequeño */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btnTemLetC:hover {
+  background-color: #e03c00; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+.btnTemLetM {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FA4A0C; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 17px; /* Tamaño de fuente predeterminado */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btnTemLetM:hover {
+  background-color: #e03c00; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+.btnTemLetG {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FA4A0C; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-size: 21px; /* Tamaño de fuente grande */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.btnTemLetG:hover {
+  background-color: #e03c00; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+h2 {
+  margin-top: 20px; /* Espacio en la parte superior de los encabezados */
+  margin-bottom: 10px; /* Espacio en la parte inferior de los encabezados */
+  font-size: 24px; /* Tamaño de fuente predeterminado */
+  color: #333; /* Color de texto oscuro */
+}

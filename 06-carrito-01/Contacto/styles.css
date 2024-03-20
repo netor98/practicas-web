@@ -1,0 +1,238 @@
+/* Resetear box-sizing */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos generales */
+body {
+	font-family: Arial, sans-serif;
+	/*background-image: url('img/fondo.jpg');*/
+	background-size: cover;
+}
+
+.login-container {
+	width: 300px;
+	margin: 100px auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.email,
+.password,
+.text {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid black; /* Puedes ajustar el color y grosor del borde según tus preferencias */
+	margin-bottom: 10px;
+}
+
+.btn {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background-color: #fa4a0c;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px; /* Añade un margen inferior para separar los botones */
+	border-radius: 30px;
+}
+
+.btn:hover {
+	background-color: orange;
+}
+
+.footer {
+	background-color: #fa4a0c;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 1px 20px;
+	color: white;
+	font: bold;
+	font-size: 16px;
+	margin-top: 5rem;
+}
+
+.pol-tica-de {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.span {
+	white-space: nowrap;
+}
+
+footer {
+	margin-top: 10rem;
+}
+.social-icons {
+	display: flex;
+	align-items: center;
+	padding: 10px 40px;
+}
+
+.social-icons a {
+	margin-left: 10px;
+}
+
+.esquina-superior-izquierda {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 100px;
+	height: auto;
+}
+
+.nombreInput {
+	font: Arial;
+	opacity: 0.5;
+	font-size: 12px;
+}
+
+input:focus {
+	outline: none; /* Elimina el efecto de resaltado al enfocar el input */
+}
+
+.h1 {
+	font: Arial;
+	color: #fa4a0c;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.esquina-inferior-derecha {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+	height: auto; /* Mantén la proporción de la imagen */
+	z-index: -1; /* Coloca la imagen detrás de otros elementos */
+	bottom: 68px;
+}
+
+.pTitulo {
+	font: Arial;
+	font-size: 32px;
+	margin-left: 200px;
+}
+
+.pTextoM {
+	font: Arial;
+	font-size: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.contenedor {
+	display: flex;
+}
+
+.izquierda3 {
+	flex: 3;
+	margin-left: 200px;
+}
+
+.izquierda1 {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.derecha1 {
+	flex: 1;
+	margin-right: 200px;
+}
+
+.inputPersonalizado {
+	background-color: #f2f4f7;
+	width: 650px;
+	height: 250px;
+}
+
+.titulo {
+	font: Arial;
+	font-size: 32px;
+	color: #fa4a0c;
+}
+
+.pTexto {
+	font: Arial;
+	font-size: 20px;
+	/*margin-left: 200px;
+  margin-right: 200px;*/
+	text-align: justify;
+	/*margin-bottom: 20px;*/
+}
+
+.INICIO .overlap-group-2 {
+	position: absolute;
+	width: 1530px;
+	height: 100px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(
+		to bottom,
+		transparent 50px,
+		#fa4a0c 50px
+	); /* Desplazado hacia abajo */
+}
+
+.INICIO .instagram {
+	position: absolute;
+	width: 38px;
+	height: 39px;
+	top: 52px;
+	left: 1414px;
+}
+
+.INICIO .facebook {
+	position: absolute;
+	width: 38px;
+	height: 39px;
+	top: 52px;
+	left: 1449px;
+}
+
+.INICIO .twitter {
+	position: absolute;
+	width: 39px;
+	height: 39px;
+	top: 52px;
+	left: 1375px;
+}
+
+.INICIO .pol-tica-de {
+	position: absolute;
+	width: 1103px;
+
+	top: 52px;
+	left: 20px;
+	font-family: 'Montserrat', Helvetica;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 16px;
+	letter-spacing: 0.1px;
+	line-height: 36px;
+	white-space: nowrap;
+}
